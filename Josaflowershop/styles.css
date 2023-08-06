@@ -1,0 +1,230 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: lavender;
+  color: #333;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: lightpink;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.home-section,
+.about-section,
+.price-section {
+  position: relative;
+  height: 100vh; /* Set sections to full viewport height */
+  overflow: hidden; /* Hide overflowing content inside */
+}
+
+.home-section .slideshow-container,
+.price-section .slideshow-container-price {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Styling for the Home section background image */
+.home-section .slide,
+.price-section .slide-price {
+  display: none;
+  text-align: center;
+}
+
+.home-section .slide img,
+.price-section .slide-price img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-section .prev,
+.home-section .next,
+.price-section .prev-price,
+.price-section .next-price {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 5px;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.home-section .next,
+.price-section .next-price {
+  right: 0;
+}
+
+.home-section .prev:hover,
+.home-section .next:hover,
+.price-section .prev-price:hover,
+.price-section .next-price:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Styling for the About Us section background image */
+.about-section {
+  background: url("images/aboutus.webp") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.about-content {
+  position: absolute;
+  top: 20px; /* Adjust the top position */
+  left: 20px; /* Adjust the left position */
+  color: rgb(16, 15, 15); /* Set text color to white */
+  font-size: 24px; /* Set font size to larger value */
+  background-color: rgba(228, 222, 222, 0.6); /* Add some transparency to the background */
+  padding: 20px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.container {
+  padding: 20px;
+}
+
+.section-content {
+  text-align: center;
+}
+
+footer {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.price-section {
+  position: relative;
+  height: 100vh; /* Set the Price List section to full viewport height */
+  overflow: hidden; /* Hide overflowing content inside */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-content {
+  font-size: 50px;
+  text-align: center;
+}
+
+.price-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-item img {
+  width: 100%;
+  height: auto;
+  max-height: 1200px; /* Set the maximum height for the images */
+  max-width: 800px; /* Set the maximum width for the images */
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 10px; /* Add some spacing between the items */
+}
+
+#contact {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f5f5f5;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+.contact-form h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-images {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.contact-images img {
+  max-width: 85%; /* Adjust the width of the images as needed */
+  border-radius: 8px;
+}
+
+
